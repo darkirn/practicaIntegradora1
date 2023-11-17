@@ -1,0 +1,31 @@
+<h3>Agregar producto</h3>
+
+
+
+<form id="addForm" >
+    Nombre del Producto: <input type="text" name="title" id="title">
+    Descripcion del Producto: <input type="text" name="description" id="description">
+    Precio del Producto: <input type="number" name="price" id="price">
+    Codigo del Producto: <input type="number" name="code" id="code">
+    Cantidad de unidades: <input type="number" name="stock" id="stock">
+    Categoria del Producto: <input type="text" name="category" id="category">
+    Id del Producto :<input type="text" name="id" id="id">
+    <input type="submit" id="create" value="Create">
+    <input type="submit" id="update" value="Update">
+
+</form>
+
+<h3>Eliminar producto por ID</h3>
+
+<form id="deleteForm">
+    Id del Producto: <input type="text" name="idd" id="idd">
+    <input type="submit" value="Delete">
+</form>
+
+<h2>Lista de productos Actualizada</h2>
+
+<div id="productList"></div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>

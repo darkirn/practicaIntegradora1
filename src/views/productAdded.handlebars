@@ -1,0 +1,17 @@
+{{#if product }}
+
+<h3>Producto Creado!</h3>
+<h4>Nombre del Producto : {{product.title}}</h4>
+<h4>Detalle : {{product.description}}</h4>
+<h4>Precio : $ {{product.price}}</h4>
+<h4>Thumbnail : {{product.thumbnail}}</h4>
+<h4>Codigo : {{product.code}}</h4>
+<h4>Stock : {{product.stock}}</h4>
+<h4>Categoria : {{product.category}}</h4>
+<h4>Id : {{product.id}}</h4>
+<hr>
+
+{{else}}
+<h4>Algun dato fue ingresado incorrectamente al crear el producto</h4>
+
+{{/if}}

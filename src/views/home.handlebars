@@ -1,0 +1,20 @@
+<h2>Lista de productos</h2>
+{{#if prod}}
+
+{{#each prod}}
+<h4>Nombre del Producto : {{title.value}}</h4>
+<h4>Detalle : {{description.value}}</h4>
+<h4>Precio : $ {{price.value}}</h4>
+<h4>Thumbnail : {{thumbnail.value}}</h4>
+<h4>Codigo : {{code.value}}</h4>
+<h4>Stock : {{stock.value}}</h4>
+<h4>Categoria : {{category.value}}</h4>
+<h4>Id : {{_id.value}}</h4>
+<hr>
+
+{{/each}}
+{{else}}
+
+<p>productos no encontrados</p>
+
+{{/if}}
